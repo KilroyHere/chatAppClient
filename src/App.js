@@ -4,7 +4,7 @@ import { useState } from "react";
 import Chat from "./Chat";
 require('dotenv').config()
 
-const socket = io.connect("process.env.URL");
+const socket = io.connect(process.env.REACT_APP_URL);
 
 function App() {
   const [username, setUsername] = useState("");
